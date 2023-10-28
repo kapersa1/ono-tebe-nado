@@ -1,1 +1,76 @@
-/* место для вашего кода */
+
+.content-section {
+    width: 1440;
+    margin: auto;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+.header {
+    padding: 92px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.header_menu{
+    align-self:center;
+}
+
+.header__links-list{
+    list-style-type: circle;
+    display:flex;
+    flex-direction: row;
+    gap: 32px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-underline-offset: 4px;
+    
+    
+    
+}
+.header__links-list-item{
+
+}
+.header__links-list-item_no-bullit{
+    list-style-type: none;
+}
+.header__logo {
+    display:block;
+    width: 136px;
+    justify-self: center;
+    align-self:center;
+    
+}
+.header__logo-image{
+    width: 100%;
+}
+
+.address{
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-self: end;
+    align-self:center;
+    text-underline-offset: 4px;
+}
+.cover {
+    padding: 0px;
+}
+.lots {
+    padding: 180px 50px;
+}
+.about {
+    padding: 0px 50px 180px;
+}
+.footer {
+    padding:0px 50px 90px;
+}
