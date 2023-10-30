@@ -4,6 +4,7 @@
   background-color: #fff;
   box-sizing: border-box;
 }
+
 .header {
   padding: 92px 50px;
   display: grid;
@@ -20,6 +21,7 @@
   flex-direction: row;
   gap: 32px;
 }
+
 .header__links-list-item {
   color: #000;
   font-family: Raleway;
@@ -29,15 +31,18 @@
   line-height: normal;
   text-underline-offset: 4px;
 }
+
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
+
 .header__logo {
   display: block;
   width: 136px;
   justify-self: center;
   align-self: center;
 }
+
 .header__logo-image {
   width: 100%;
 }
@@ -55,12 +60,19 @@
   justify-self: end;
   align-self: center;
   text-underline-offset: 4px;
-}
-.overlay {
   position: relative;
-  background-color: rgb(0 0 0/0.5);
+  bottom: 2px;
+  right: 3px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0/0.6);
   z-index: 1;
 }
+
 .cover {
   width: 100%;
   height: 757px;
@@ -90,43 +102,79 @@
   z-index: 2;
 }
 
-.aligned-text {
-}
-.text_right {
-  position: relative;
-  top: 5px;
-  right: 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-self: flex-end;
-  text-align: end;
-}
-.text_center {
-  position: relative;
-  top: 5px;
-  left: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
-  align-self: center;
-}
 .text_left {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.aligned-text_center {
+
+.text_center {
+  position: relative;
+  left: 18px;
+  padding-top: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
 }
-.aligned-text_right {
+
+.text_right {
+  position: relative;
+  top: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+  text-align: end;
 }
+
 .letter-spacing-extended {
   letter-spacing: 60px;
 }
 
 .no-letter-spacing {
   letter-spacing: 0px;
+}
+
+.cover_description {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 100px;
+  left: 0px;
+  z-index: 3;
+  justify-content: flex-end;
+  gap: 78px;
+  padding-right: 50px;
+}
+
+.cover__description-text {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+  word-spacing: 17px;
+  align-self: center;
+}
+.word-spasing-expanded {
+  word-spacing: 22px;
+
+}
+.button {
+  border: solid 1px #fff;
+  color: #fff;
+  padding: 12px 32px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 .lots {
   padding: 180px 50px;
