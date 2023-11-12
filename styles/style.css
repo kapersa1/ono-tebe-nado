@@ -35,6 +35,10 @@
   list-style-type: none;
 }
 
+.header__menu-link_active {
+  text-decoration: none;
+}
+
 .header__logo {
   display: block;
   width: 136px;
@@ -209,7 +213,6 @@
 }
 
 .card {
-  display: block;
   width: 430px;
   height: 450px;
   position: relative;
